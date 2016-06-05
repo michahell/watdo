@@ -1,0 +1,7 @@
+# sublime text files
+.sublime-*.*
+
+# node
+node_modules
+bower_components
+semantic
