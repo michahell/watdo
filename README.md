@@ -1,6 +1,10 @@
 # wat do ?
 This project tries to give you as a designer / developer an excuse for a new side-project.
 
+# screenshot:
+
+![wat do ?](watdo.png?raw=true "wat do")
+
 # Do you tick these boxes ?
 
 So... 
