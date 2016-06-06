@@ -10,15 +10,16 @@ var _ = require('lodash');
 var fp = require('lodash/fp');
 
 var generator = {};
+var techStackItems = {};
 
-var techStackTypeColors = [ // eslint-disable-line
+techStackItems.techStackTypeColors = [ // eslint-disable-line
   {
     type: 'moduleBundler',
     color: 'blue'
   },
   {
     type: 'styleFramework',
-    color: 'olive'
+    color: 'green'
   },
   {
     type: 'frontendFramework',
@@ -26,20 +27,18 @@ var techStackTypeColors = [ // eslint-disable-line
   },
   {
     type: 'server',
-    color: 'orange'
+    color: 'pink'
   },
   {
     type: 'database',
-    color: 'red'
+    color: 'violet'
   }
 ];
 
-var techStackItems = {};
-
 techStackItems.moduleBundler = [
   {
-    name: 'without module bundler',
-    type: 'ductape.js',
+    name: 'ductape.js',
+    type: 'moduleBundler',
     url: 'https://www.destroyallsoftware.com/images/talks/wat.preview.png'
   },
   {
@@ -155,17 +154,13 @@ generator.generate = function () {
   // generate random tech stack
   var pickedTechStack = generator.getRandomTechStack();
 
-  _.find(generator.techStackTypeColors, function (typeColorCombo) {
-    console.log('comparing typeColorCombo: ', typeColorCombo.type, stackItem.type);
-    typeColorCombo.type === stackItem.type;
-  });
-
   // apply colors to tech stack items
   var coloredTechStack = _.map(pickedTechStack, function (stackItem) {
-    return _.assign(stackItem, {color: 'red'});
+    var typeColorComboFound = _.find(techStackItems.techStackTypeColors, function (typeColorCombo) {
+      return typeColorCombo.type === stackItem.type;
+    });
+    return _.assign(stackItem, {color: typeColorComboFound.color});
   });
-
-  console.log('coloredTechStack: ', coloredTechStack);
 
   return pickedTechStack;
 };

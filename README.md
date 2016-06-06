@@ -1,6 +1,5 @@
 # wat do ?
 This project tries to give you as a designer / developer an excuse for a new side-project.
-this is the origin of 'wat do ?'
 
 # Do you tick these boxes ?
 
