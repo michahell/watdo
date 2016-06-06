@@ -9,146 +9,78 @@
   <!-- Site Properties -->
   <title>Wat do ?</title>
   <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../src/app.css">
 
-  <style type="text/css">
-
-    .hidden.menu {
-      display: none;
-    }
-
-    .masthead.segment {
-      min-height: 700px;
-      padding: 1em 0em;
-    }
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-    }
-
-    .ui.vertical.stripe {
-      padding: 8em 0em;
-    }
-    .ui.vertical.stripe h3 {
-      font-size: 2em;
-    }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
-      margin-top: 3em;
-    }
-    .ui.vertical.stripe .floated.image {
-      clear: both;
-    }
-    .ui.vertical.stripe p {
-      font-size: 1.33em;
-    }
-    .ui.vertical.stripe .horizontal.divider {
-      margin: 3em 0em;
-    }
-
-    .quote.stripe.segment {
-      padding: 0em;
-    }
-    .quote.stripe.segment .grid .column {
-      padding-top: 5em;
-      padding-bottom: 5em;
-    }
-
-    .footer.segment {
-      padding: 5em 0em;
-    }
-
-    .secondary.pointing.menu .toc.item {
-      display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
-        display: none;
-      }
-      .secondary.pointing.menu .toc.item {
-        display: block;
-      }
-      .masthead.segment {
-        min-height: 350px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-      }
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-      }
-    }
-
-
-  </style>
-
-<script type="text/javascript" src="app.bundle.js?20d91cf616f0ca8ad784"></script></head>
-<body>
+<script type="text/javascript" src="app.bundle.js?c12b015738b2aeb54c57"></script></head>
+<body class="inverted">
 
   <!-- Page Contents -->
-  <div class="pusher">
+  <div class="ui fluid container">
     
-    <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui inverted vertical center aligned segment">
+      
+      <div class="ui inverted segment">
+        <p></p>
+        <h4 class="ui horizontal inverted divider">
+          <button class="ui inverted green button medium" id="projectGenerator">
+            generate sideproject <i class="wizard icon"></i>
+          </button>
+        </h4>
+      </div>
 
       <div class="ui text container">
-        <h1 class="ui inverted header" id="projectName">
-          Wat do ?
+        
+        <!-- GENERATED PROJECT NAME -->
+        <br/>
+        <br/>
+        <a class="ui blue massive label" id="projectName"></a>
+        
+        <!-- GENERATED PROJECT DESCRIPTION -->
+        <br/>
+        <h1 class="ui inverted header" id="projectDescription">
+          wat
         </h1>
-        <h2>A </h2>
+        
+        <!-- GENERATED PROJECT TECH STACK -->
+        <br/>
+        <h2 class="ui inverted header" id="projectTechStack">
+          written using 
+          <a class="ui massive label" id="frontendFramework"></a>
+          and 
+          <a class="ui massive label" id="styleFramework"></a>
+          , bundled with
+          <a class="ui massive label" id="moduleBundler"></a>
+          and with a 
+          <a class="ui massive label" id="server"></a>
+          backend using 
+          <a class="ui massive label" id="database"></a>
+          .
+        </h2>
+        
+        <!-- START WITH THIS POS GENERATED PROJECT IDEA! -->
+        <br/>
+        <br/>
+        <br/>
         <div class="ui inverted segment">
-          <button class="ui inverted red button large">start with this project <i class="right arrow icon"></i></button>
+          <button class="ui inverted red button large">
+            start with this project <i class="rocket icon"></i>
+          </button>
         </div>
       </div>
 
-      <!-- <div class="ui inverted segment">
-        <div class="ui blue inverted statistic">
-          <div class="value">
-            1
-          </div>
-          <div class="label">
-            number of projects generated
-          </div>
-        </div>
-        <div class="ui green inverted statistic">
-          <div class="value">
-            1
-          </div>
-          <div class="label">
-            number of projects started
-          </div>
-        </div>
-      </div> -->
-
     </div>
 
-    <div class="ui vertical stripe segment">
-      <div class="ui middle aligned stackable grid container">
-        <div class="row">
-          <div class="eight wide column">
-            <h3 class="ui header">We Help Companies and Companions</h3>
-            <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          </div>
-        </div>
+    <div class="ui inverted segment">
+      made with fun and <i class="bar icon"></i> by Powergeek
+      <div class="ui inverted segment">
+        follow me on 
+        <button class="ui twitter button">
+          <i class="twitter icon"></i>
+          Twitter
+        </button>
       </div>
     </div>
+
 
 </div>
   
