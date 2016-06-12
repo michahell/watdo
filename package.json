@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/michahell/watdo#readme",
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "html-webpack-plugin": "^2.19.0",
     "json-loader": "^0.5.4",
+    "merge-stream": "^1.0.0",
+    "run-sequence": "^1.2.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-stream": "^3.2.0"
@@ -29,6 +32,6 @@
     "foswig": "^1.1.1",
     "jquery": "^2.2.4",
     "lodash": "^4.13.1",
-    "semantic-ui": "^2.1.8"
+    "semantic-ui-css": "^2.1.8"
   }
 }
