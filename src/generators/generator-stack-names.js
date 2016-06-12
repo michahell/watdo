@@ -37,7 +37,7 @@ techStackItems.techStackTypeColors = [ // eslint-disable-line
 
 techStackItems.moduleBundler = [
   {
-    name: 'ductape.js',
+    name: 'ductape.io',
     type: 'moduleBundler',
     url: 'https://www.destroyallsoftware.com/images/talks/wat.preview.png'
   },
@@ -50,6 +50,11 @@ techStackItems.moduleBundler = [
     name: 'webPack',
     type: 'moduleBundler',
     url: 'https://webpack.github.io/'
+  },
+  {
+    name: 'jspm.io',
+    type: 'moduleBundler',
+    url: 'http://jspm.io/'
   }
 ];
 
