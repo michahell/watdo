@@ -1,6 +1,10 @@
 # wat do ?
 This project tries to give you as a designer / developer an excuse for a new side-project.
 
+# live version:
+
+http://wat.cool:3000/
+
 # screenshot:
 
 ![wat do ?](watdo.png?raw=true "wat do")
